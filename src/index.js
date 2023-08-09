@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { Provider,connect } from 'react-redux';
 import './index.css';
-import App from './App';
+import App from './containers/App'
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   <App/>
   </React.StrictMode>
 );
+
+// ReactDOM.render(<Hello />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
